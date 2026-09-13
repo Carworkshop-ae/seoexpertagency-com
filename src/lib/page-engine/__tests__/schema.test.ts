@@ -4,7 +4,7 @@ import { generateServicePageSchema, generateOrganizationSchema, organizationDeta
 describe('generateServicePageSchema', () => {
   const ctx = {
     service: 'Technical SEO Audit & Architecture',
-    url: 'https://seoexpertsagency.ae/services/technical-seo',
+    url: 'https://seoexpertsagency.com/services/technical-seo',
     price: '1500',
     breadcrumbs: [{ name: 'Services', url: '/services' }, { name: 'Technical SEO', url: '/services/technical-seo' }],
     faqs: [{ question: 'How long does SEO take to see results?', answer: 'Typically 3 to 6 months.' }],
@@ -53,7 +53,7 @@ describe('generateOrganizationSchema', () => {
     const schema = generateOrganizationSchema()
     expect(schema['@type']).toBe('ProfessionalService')
     expect(schema.name).toBe('SEO Expert Agency')
-    expect(schema.url).toBe('https://seoexpertsagency.ae')
+    expect(schema.url).toBe('https://seoexpertsagency.com')
   })
 
   // Structured data asserts facts to search engines, so an unset business

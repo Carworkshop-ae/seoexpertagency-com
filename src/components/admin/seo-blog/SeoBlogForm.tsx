@@ -131,7 +131,7 @@ export function SeoBlogForm({ postId, initial, categories }: Props) {
     router.refresh()
   }
 
-  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://seoexpertsagency.ae'
+  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://seoexpertsagency.com'
 
   return (
     <div className="max-w-4xl space-y-5">

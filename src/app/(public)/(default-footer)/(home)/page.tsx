@@ -43,11 +43,11 @@ export async function generateMetadata(): Promise<Metadata> {
   const seo = resolveSEO(await getStaticPageSeo('home'), {
     title,
     description,
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://seoexpertsagency.ae',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://seoexpertsagency.com',
   })
   return seoToMetadata(
     seo,
-    process.env.NEXT_PUBLIC_SITE_URL || 'https://seoexpertsagency.ae',
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://seoexpertsagency.com',
     await getStaticPageMetaKeyword('home')
   )
 }
